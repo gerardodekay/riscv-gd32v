@@ -6,6 +6,7 @@
 *.ko
 *.obj
 *.elf
+*.list
 
 # Linker output
 *.ilk
@@ -50,3 +51,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+.DS_Store
+.vscode/
