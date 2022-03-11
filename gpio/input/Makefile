@@ -39,6 +39,7 @@ $(LIB):
 .PHONY: clean
 clean:
 	rm -f $(OBJS) *.elf *.list *.bin
+	@make -C $(LIB_ROOT) clean
 
 # Stop make from deleting these suffix'd files.
 .PRECIOUS: %.list %.elf %.o

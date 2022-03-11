@@ -20,7 +20,7 @@ void delay_cycles( uint32_t cyc ) {
     }
 }
 
-int main( void ) {
+int main(void) {
     // Enable the GPIOA and GPIOC peripherals.
     gpio_init(GPIOA);
     gpio_init(GPIOC);

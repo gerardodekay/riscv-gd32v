@@ -5,7 +5,7 @@
 #include "riscv.h"
 #include "gpio.h"
 
-int main( void ) {
+int main(void) {
     // Enable the GPIOB peripheral.
     gpio_init(GPIOB);
 
