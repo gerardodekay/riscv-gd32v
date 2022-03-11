@@ -29,4 +29,17 @@ int strncmp(const char* _s1, const char* _s2, size_t n);
 
 char *strcat (char *dest, const char *src);
 
+void *memset(void *_p, int c, size_t n);
+
+/*
+ * Simple memory allocation: no free, except for freeing all allocated memory
+ */
+void *kmalloc(unsigned nbytes);
+
+void *kmalloc_aligned(unsigned nbytes, unsigned alignment);
+
+void kfree_all(void);
+
+void delay_cycles(uint32_t cyc);
+
 #endif

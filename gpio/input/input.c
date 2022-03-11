@@ -1,6 +1,4 @@
-// Standard library includes.
 #include <stdint.h>
-#include <string.h>
 
 #include "riscv.h"
 #include "gpio.h"

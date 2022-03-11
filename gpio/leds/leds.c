@@ -1,6 +1,4 @@
-// Standard library includes.
 #include <stdint.h>
-#include <string.h>
 
 #include "riscv.h"
 #include "gpio.h"
@@ -12,13 +10,6 @@
 #define LED_ON 0
 #define LED_OFF 1
 #define DELAY_CYCLES 500000
-
-// Simple 'busy loop' delay method.
-void delay_cycles( uint32_t cyc ) {
-    uint32_t d_i;
-    for ( d_i = 0; d_i < cyc; ++d_i ) { __asm__( "nop" );
-    }
-}
 
 int main(void) {
     // Enable the GPIOA and GPIOC peripherals.

@@ -42,3 +42,11 @@ char *strcat (char *dest, const char *src) {
     } while (c != '\0');
     return dest;
 }
+
+void *memset(void *_p, int c, size_t n) {
+    char *p = _p, *e = p + n;
+
+    while(p < e)
+        *p++ = c;
+    return _p;
+}

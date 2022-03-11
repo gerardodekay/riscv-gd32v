@@ -54,6 +54,7 @@ SECTIONS
     *(COMMON)
     . = ALIGN(4);
     _ebss = .;
+    _end = .;
   } >RAM
 
   . = ALIGN(8);
@@ -67,3 +68,5 @@ SECTIONS
     PROVIDE( _sp = . ); 
   } >RAM
 }
+
+PROVIDE(__heap_start__ = _end);
