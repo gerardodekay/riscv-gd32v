@@ -4,6 +4,7 @@ include $(LIB_ROOT)/defs.mk
 
 # Source files.
 AS_SRC := $(wildcard ./*.[S])
+AS_SRC += $(wildcard ./src/*.[S])
 C_SRC := $(wildcard ./src/*.[c])
 
 LIB := libgd32v.a
