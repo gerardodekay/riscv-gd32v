@@ -2,7 +2,7 @@
 
 ## Longan Nano pinout
 
-![Tux, the Linux mascot](images/pinout.png)
+![Board pinout](images/pinout.png)
 
 ## Installing the toolchain
 
